@@ -38,7 +38,7 @@ function displayPics(){
   // console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the constiable declaration from `const to `const`.
   // PUT YOUR RESPONSE IN THIS COMMENT
-  // becouse the varable const only works in the code block it is diffined. 
+  // because the varable const only works in the code block it is defined.
   console.log(viewed);
 
   for (let i = 0; i < 3; i++){
