@@ -107,22 +107,15 @@ console.log('Hello from the new object function', newObject(['hi', 'hello', 'are
 // Write your solutions on a single line wherever possible.
 
 
+let sum = (a, b, c, d) => a + b + c + d;
 
-let sum = (a, b, c, d) => {
-  return a + b + c + d;
-};
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(sum(1, 2, 3, 4));
 
 
-let objectLit = () => {
-  return {
-    key1: 'value1',
-    key2: 'value2',
-    key3: 'value3',
-  };
-};
+let objectLit = () => ({key1: 'value1', key2: 'value2', key3: 'value3'});
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(objectLit());
@@ -138,15 +131,14 @@ let sumAndProduct = (a, b) => {
 console.log(sumAndProduct(3, 9));
 
 
-let message = (name) => {
-  return `Hello, ${name}!`;
-};
+let message = (name) => `Hello, ${name}!`;
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(message('Allie'));
 
 
-let Student = function(name, age, hometown) {
+let Student = function (name, age, hometown)  {
   this.name = name;
   this.age = age;
   this.hometown = hometown;
@@ -156,19 +148,19 @@ let joe = new Student('Joe', 'Schmoe', 100);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
-// console.log(joe);
+console.log(joe);
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
 
 
-Student.prototype.greeting = () =>{
+Student.prototype.greeting = function() {
   return `Hi, my name is ${this.name}`;
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this method to break!
-// console.log(joe.greeting());
+console.log(joe.greeting());
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
@@ -202,5 +194,5 @@ console.log(joe.scopeArrow());
 //This would refer to that particular object within the block. So, it would refer to Student.
 // 2. What is "this" when joe.scopeArrow() is invoked? It appears that it is not bound to anything at all and is just kind of pulling random date, that still corresponds with code, but does not have any of the actual information.
 //
-// 3. Explain why "this" is different when an arrow function is used. Arrow functions do not bind the 'this' keyword so when they are used. This no longer seems to stay just in that particular object/function. 
+// 3. Explain why "this" is different when an arrow function is used. Arrow change how the scope of the "this" keyword making it not work within constructors 
 //
