@@ -77,10 +77,7 @@ const multiLiner = word => {
 // The way an object is returned is different with an arrow function, too.
 // Here is how we return an object without arrow functions
 const oldObject = function(array) {
-  return {
-    firstValue: array[0],
-    secondValue: array[1],
-    thirdValue: array[2]
+  return {firstValue: array[0],secondValue: array[1],thirdValue: array[2]
   };
 };
 
