@@ -103,9 +103,9 @@ const newObject = array => ({
 // Refactor each function into an arrow function.
 // Write your solutions on a single line wherever possible.
 
+// const addOneLiner = (num1, num2) => `${num1} + ${num2} = ${num1 + num2}`;
 
-
-let sum = function(a, b, c, d) {
+const sum = (a, b, c, d) => {
   return a + b + c + d;
 };
 
@@ -113,7 +113,7 @@ let sum = function(a, b, c, d) {
 // console.log(sum(1, 2, 3, 4));
 
 
-let objectLit = function() {
+let objectLit = () => {
   return {
     key1: 'value1',
     key2: 'value2',
@@ -125,7 +125,7 @@ let objectLit = function() {
 // console.log(objectLit());
 
 
-let sumAndProduct = function(a, b) {
+let sumAndProduct = (a, b) => {
   let sum = a + b;
   let product = a * b;
   return [sum, product];
@@ -135,7 +135,7 @@ let sumAndProduct = function(a, b) {
 // console.log(sumAndProduct(3, 9));
 
 
-let message = function(name) {
+let message = (name) => {
   return `Hello, ${name}!`;
 };
 
@@ -143,7 +143,7 @@ let message = function(name) {
 // console.log(message('Allie'));
 
 
-let Student = function(name, age, hometown) {
+let Student = function (name, age, hometown) {
   this.name = name;
   this.age = age;
   this.hometown = hometown;
@@ -153,13 +153,13 @@ let joe = new Student('Joe', 'Schmoe', 100);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
-// console.log(joe);
+console.log(joe);
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
 
 
-Student.prototype.greeting = function() {
+Student.prototype.greeting = () => {
   return `Hi, my name is ${this.name}`;
 };
 
@@ -171,7 +171,7 @@ Student.prototype.greeting = function() {
 
 
 
-Student.courseName = function() {
+Student.courseName = () => {
   return 'This student is enrolled in Code 301.';
 };
 
@@ -182,7 +182,7 @@ Student.courseName = function() {
 
 // STEP 11
 // How do arrow functions affect constructor functions?
-Student.prototype.scope = function() {
+Student.prototype.scope = () => {
   console.log(this);
 };
 
