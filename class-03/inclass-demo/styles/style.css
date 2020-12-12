@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+section {
+  margin: 15px;
+}
+
+.pet-template {
+  display: none;
+}
+
+ul {
+  border: solid sandybrown 10px;
+  ;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+li {
+  border: solid purple .5px;
+  font-size: 2.5em;
+}
