@@ -2,8 +2,8 @@
 
 // STEP 1
 // This is a standard function expression. You may also be familiar with function declarations, which begin with the "function" keyword.
-const theOldWay = function(course) {
-  return `I am currently enrolled in ${course}`;
+const theOldWay = (course) => {
+  // return `I am currently enrolled in ${course}`;
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
@@ -24,7 +24,7 @@ const theNewWay = (course) => {
 // STEP 3
 // When we have one parameter, we can omit the parentheses
 const withoutParens = course => {
-  return `I am currently enrolled in ${course}`;
+  // return `I am currently enrolled in ${course}`;
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
@@ -76,7 +76,7 @@ const multiLiner = word => {
 // STEP 8
 // The way an object is returned is different with an arrow function, too.
 // Here is how we return an object without arrow functions
-const oldObject = function(array) {
+const oldObject = (array) => {
   return {firstValue: array[0],secondValue: array[1],thirdValue: array[2]
   };
 };
@@ -153,7 +153,7 @@ let joe = new Student('Joe', 'Schmoe', 100);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
-console.log(joe);
+// console.log(joe);
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
