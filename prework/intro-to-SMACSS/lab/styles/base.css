@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Oswald:700|Yellowtail|Patrick+Hand');
+
+* {
+  font-family: times;
+}
+
+body {
+  background: #fff;
+}
+
+hr {
+  clear: both;
+  border: 0;
+  height: 13px;
+  background-image: url('../img/hr.png');
+}
+
+h2 {
+  margin-top: 50px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5em;
+}
+
+input {
+  font-family: 'Patrick Hand', cursive;
+}
+
+
