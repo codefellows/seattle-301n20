@@ -8,10 +8,6 @@ Another component of this portion of the course involves working with a static c
 
 ## Daily Plan
 
-- Warm-up exercise
-- Review code challenges
-- Introduction of today's code challenge topic
-- Code review of lab assignment
 - Node, ExpressJS, and npm
 - Environment variables
 - Code Demo
