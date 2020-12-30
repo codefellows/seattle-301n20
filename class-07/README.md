@@ -6,10 +6,7 @@ Today we will continue to work with third-party APIs to request data. Part of be
 
 ## Daily Plan
 
-- Warm-up exercise
-- Review code challenges
-- Introduction of today's code challenge topic
-- Code review of lab assignment
+
 - Functional programming concepts
 - How to refactor code
 - Code Demo
