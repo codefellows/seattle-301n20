@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List of groceries</title>
+  </head>
+  <body>
+    <h1>My Grocery List</h1>
+    <ul>
+      <% data.forEach( value => { %>
+        <h2>Name/Qty</h2>
+        <li id ="<%=value.name %>"><%= value.name %>/<%= value.qty %></li>
+        <p>------------------</p>
+      <% }) %>
+    </ul>
+  </body>
+</html>
