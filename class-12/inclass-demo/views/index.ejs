@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('layout/head') %>
+</head>
+<body>
+  <section>
+    <h1>My Tasks</h1>
+    <% data.forEach(task => { %>
+      <ul>
+        <li>Title: <%= task.title %></li>
+        <li>Status: <%= task.status %></li>
+        <a href="/tasks/<%= task.id %>">View Details</a>
+      </ul>
+   <% }) %>
+  </section>
+</body>
+</html>
