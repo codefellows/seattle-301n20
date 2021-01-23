@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../layout/head') %>
+  </head>
+  <body>
+    <header>
+      <%- include('../layout/header') %>
+    </header>
+    <form action="/new" method="POST">
+      <legend>Add a Task</legend>
+      <input type="text" name="title" placeholder="Title of task">
+      <textarea name="description" placeholder="Description of the task" cols="30" rows="10"></textarea>
+      <input type="text" name="category" placeholder="Category">
+      <input type="text" name="contact" placeholder="Contact Name">
+      <input type="hidden" name="status" value="incomplete">
+      <button type="submit">Add Task</button>
+    </form>
+  </body>
+</html>

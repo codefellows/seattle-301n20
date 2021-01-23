@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./layout/head') %>
+</head>
+<body>
+  <header>
+    <%- include('./layout/header') %>
+  </header>
+  <section>
+    <ul>
+      <% data.forEach(task => { %>
+        <li>
+          <h4><%= task.title %></h4>
+          <p><%= task.status %></p>
+          <a href="/tasks/<%= task.id %>">View More Details</a>
+        </li>
+      <% }) %>
+    </ul>
+  </section>
+</body>
+</html>
